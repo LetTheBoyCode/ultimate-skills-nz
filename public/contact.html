@@ -169,18 +169,21 @@
                 data-netlify-honeypot="bot-field"
               >
                 <p class="hidden">
-                  <label
+                  <label for="bot-field"
                     >Don't fill this out if you're human:
-                    <input name="bot-field"
+                    <input id="bot-field" name="bot-field"
                   /></label>
                 </p>
                 <input type="hidden" name="form-name" value="contact" />
 
                 <div class="mb-6">
-                  <label class="block text-slate-700 font-bold mb-2"
+                  <label
+                    for="full-name"
+                    class="block text-slate-700 font-bold mb-2"
                     >Name</label
                   >
                   <input
+                    id="full-name"
                     type="text"
                     name="full-name"
                     class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand focus:ring-2 focus:ring-blue-200 outline-none transition"
@@ -190,10 +193,11 @@
                 </div>
 
                 <div class="mb-6">
-                  <label class="block text-slate-700 font-bold mb-2"
+                  <label for="email" class="block text-slate-700 font-bold mb-2"
                     >Email Address</label
                   >
                   <input
+                    id="email"
                     type="email"
                     name="email"
                     class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand focus:ring-2 focus:ring-blue-200 outline-none transition"
@@ -203,11 +207,12 @@
                 </div>
 
                 <div class="mb-6">
-                  <label class="block text-slate-700 font-bold mb-2"
+                  <label for="topic" class="block text-slate-700 font-bold mb-2"
                     >Topic</label
                   >
                   <div class="relative">
                     <select
+                      id="topic"
                       name="topic"
                       class="w-full appearance-none px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-700 focus:border-brand focus:ring-2 focus:ring-blue-200 outline-none transition pr-10 cursor-pointer"
                     >
@@ -226,10 +231,13 @@
                 </div>
 
                 <div class="mb-6">
-                  <label class="block text-slate-700 font-bold mb-2"
+                  <label
+                    for="message"
+                    class="block text-slate-700 font-bold mb-2"
                     >Message</label
                   >
                   <textarea
+                    id="message"
                     name="message"
                     class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand focus:ring-2 focus:ring-blue-200 outline-none transition"
                     rows="4"
