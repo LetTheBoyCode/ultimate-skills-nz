@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             topicSelect.value = selectionMap[enrolType];
         }
     }
+    document.body.classList.add('loaded');
 });
 
 // ==========================================
