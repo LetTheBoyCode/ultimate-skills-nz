@@ -62,26 +62,28 @@
         "@context": "https://schema.org",
         "@type": "AboutPage",
         "name": "About Ultimate Skills NZ | Our Mission",
-        "description": "Learn about the team and mission behind Ultimate Skills NZ, a leading school holiday and OSCAR programme for children aged 9-13 in Tauranga, New Zealand.",
+        "description": "Learn about the mission behind Ultimate Skills NZ, Tauranga's elite sports coaching provider offering holiday programmes and development for children aged 8-17.",
         "url": "https://ultimateskillsnz.co.nz/about.html",
         "mainEntity": {
-          "@type": "ChildCare",
+          "@type": "SportsActivityLocation",
+          "@id": "https://ultimateskillsnz.co.nz/#organization",
           "name": "Ultimate Skills NZ",
           "url": "https://ultimateskillsnz.co.nz",
           "logo": "https://ultimateskillsnz.co.nz/images/USNZlogo.svg",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+64-210-230-1770",
-            "contactType": "customer service"
-          },
+          "telephone": "+64-210-230-1770",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "57 Arabian Drive",
             "addressLocality": "Papamoa",
             "addressRegion": "Tauranga",
             "postalCode": "3118",
             "addressCountry": "NZ"
           },
+          "areaServed": [
+            { "@type": "City", "name": "Tauranga" },
+            { "@type": "AdministrativeArea", "name": "Papamoa" },
+            { "@type": "AdministrativeArea", "name": "Mount Maunganui" },
+            { "@type": "AdministrativeArea", "name": "Greerton" }
+          ],
           "sameAs": [
             "https://www.facebook.com/profile.php?id=61583484808057",
             "https://www.instagram.com/ultimate_skills_nz?igsh=ZHZmbDRpczhsdHQ0"

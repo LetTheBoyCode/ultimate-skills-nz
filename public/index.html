@@ -63,24 +63,28 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ChildCare",
+        "@type": "SportsActivityLocation",
+        "@id": "https://ultimateskillsnz.co.nz/#organization",
         "name": "Ultimate Skills NZ",
         "url": "https://ultimateskillsnz.co.nz",
         "logo": "https://ultimateskillsnz.co.nz/images/USNZlogo.svg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+64-210-230-1770",
-          "contactType": "customer service"
-        },
+        "image": "https://ultimateskillsnz.co.nz/images/socialPic.webp",
+        "telephone": "+64-210-230-1770",
+        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "57 Arabian Drive",
           "addressLocality": "Papamoa",
           "addressRegion": "Tauranga",
           "postalCode": "3118",
           "addressCountry": "NZ"
         },
-        "ageRange": "8-17",
+        "areaServed": [
+          { "@type": "City", "name": "Tauranga" },
+          { "@type": "AdministrativeArea", "name": "Papamoa" },
+          { "@type": "AdministrativeArea", "name": "Mount Maunganui" },
+          { "@type": "AdministrativeArea", "name": "Greerton" }
+        ],
+        "description": "Elite sports coaching and holiday programmes in Tauranga, specializing in Rugby, Football, and tactical development for ages 8-17.",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -92,9 +96,7 @@
               "Friday"
             ],
             "opens": "08:30",
-            "closes": "17:00",
-            "validFrom": "2026-01-27",
-            "validThrough": "2026-12-31"
+            "closes": "17:00"
           }
         ],
         "sameAs": [
