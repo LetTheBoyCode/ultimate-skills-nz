@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadNavbar();
     loadFooter();
 
-    // 2. Initialize Contact Form
+    // 1. Initialize Contact Form Submission
     const contactForm = document.getElementById('contactForm');
     const successMessage = document.getElementById('successMessage');
 
@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.disabled = true;
 
             const formData = new FormData(contactForm);
-
             formData.append("form-name", "contact");
             
             fetch("/", {
@@ -40,6 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("Sorry, we couldn't send your message. Please try again.");
             });
         });
+    }
+
+    // 2. Handle URL Parameters for Enrolment
+    const urlParams = new URLSearchParams(window.location.search);
+    const enrolType = urlParams.get('enrol');
+    const topicSelect = document.getElementById('topic');
+
+    if (enrolType && topicSelect) {
+        const selectionMap = {
+            'term': 'School Term Enrolment',
+            'holiday': 'School Holiday Enrolment',
+            'knights': 'Knights Academy Enrolment'
+        };
+
+        if (selectionMap[enrolType]) {
+            topicSelect.value = selectionMap[enrolType];
+        }
     }
 });
 
@@ -78,9 +94,6 @@ function highlightCurrentPage() {
 
   navLinks.forEach((link) => {
     const href = link.getAttribute("href");
-    
-    // Improved logic: 
-    // If we are at root and link is index, OR if path contains the link's name
     if ((path === "/" && href === "index.html") || (path !== "/" && href && path.includes(href.replace('.html', '')))) {
       link.classList.add("text-brand", "font-bold");
       link.classList.remove("text-slate-600", "hover:text-brand");
@@ -119,7 +132,6 @@ window.toggleFaq = function(button) {
   const answer = button.nextElementSibling;
   const icon = button.querySelector("i");
 
-  // Ensure icon has transition class for smoothness
   icon.classList.add("transition-transform", "duration-300");
 
   if (answer.classList.contains("hidden")) {
