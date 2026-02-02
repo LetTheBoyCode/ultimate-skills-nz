@@ -211,6 +211,21 @@
                 </div>
 
                 <div class="mb-6">
+                  <label for="phone" class="block text-slate-700 font-bold mb-2"
+                    >Phone</label
+                  >
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    autocomplete="tel"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand focus:ring-2 focus:ring-blue-200 outline-none transition"
+                    placeholder="021 234 567"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
                   <label for="email" class="block text-slate-700 font-bold mb-2"
                     >Email Address</label
                   >
@@ -236,10 +251,15 @@
                       class="w-full appearance-none px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-700 focus:border-brand focus:ring-2 focus:ring-blue-200 outline-none transition pr-10 cursor-pointer"
                     >
                       <option value="General Inquiry">General Enquiry</option>
-                      <option value="Programme Enrollment">
-                        Program Enrollment
+                      <option value="School Term Enrolment">
+                        School Term Enrolment
                       </option>
-                      <option value="Support Issue">Support Issue</option>
+                      <option value="School Holiday Enrolment">
+                        School Holiday Enrolment
+                      </option>
+                      <option value="Knights Academy Enrolment">
+                        Knights Academy Enrolment
+                      </option>
                     </select>
                     <div
                       class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-slate-500"
