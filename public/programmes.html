@@ -66,43 +66,83 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Ultimate Skills NZ Sports Holiday Programme",
-        "description": "Elite sports coaching holiday programme in Tauranga focusing on Rugby, Football, and tactical development for kids aged 8-17.",
-        "image": "https://ultimateskillsnz.co.nz/images/socialPic.webp",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "startDate": "2026-04-06T08:30:00+13:00",
-        "endDate": "2026-04-17T15:00:00+13:00",
-        "location": {
-          "@type": "Place",
-          "name": "Ultimate Skills NZ - Tauranga",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "57 Arabian Drive",
-            "addressLocality": "Papamoa",
-            "addressRegion": "Tauranga",
-            "postalCode": "3118",
-            "addressCountry": "NZ"
+        "@graph": [
+          {
+            "@type": "SportsActivityLocation",
+            "@id": "https://ultimateskillsnz.co.nz/#organization",
+            "name": "Ultimate Skills NZ",
+            "url": "https://ultimateskillsnz.co.nz",
+            "image": "https://ultimateskillsnz.co.nz/images/socialPic.webp",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "57 Arabian Drive",
+              "addressLocality": "Papamoa",
+              "addressRegion": "Tauranga",
+              "postalCode": "3118",
+              "addressCountry": "NZ"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Coaching Services",
+              "itemListElement": [
+                {
+                  "@type": "Service",
+                  "name": "After-School Coaching",
+                  "description": "Term-based sports coaching for kids. Pricing level: $ (Budget-friendly).",
+                  "provider": {
+                    "@id": "https://ultimateskillsnz.co.nz/#organization"
+                  }
+                },
+                {
+                  "@type": "Service",
+                  "name": "School Holiday Programme",
+                  "description": "Action-packed school holiday programme in Tauranga. Pricing level: $$ (Moderate).",
+                  "provider": {
+                    "@id": "https://ultimateskillsnz.co.nz/#organization"
+                  }
+                },
+                {
+                  "@type": "Service",
+                  "name": "Custom Elite Coaching",
+                  "description": "Personalised 1-on-1 tactical development sessions. Pricing level: $$$ (Premium).",
+                  "provider": {
+                    "@id": "https://ultimateskillsnz.co.nz/#organization"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "Event",
+            "name": "Ultimate Skills NZ Sports Holiday Programme",
+            "url": "https://ultimateskillsnz.co.nz/programmes.html",
+            "image": "https://ultimateskillsnz.co.nz/images/socialPic.webp",
+            "description": "Action-packed school holiday programme in Tauranga. Pricing level: $$ (Moderate).",
+            "startDate": "2026-04-06T09:00:00+13:00",
+            "endDate": "2026-04-17T15:00:00+13:00",
+            "performer": {
+              "@type": "Organization",
+              "name": "Ultimate Skills NZ Coaching Team"
+            },
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "Place",
+              "name": "Ultimate Skills NZ - Tauranga",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "57 Arabian Drive",
+                "addressLocality": "Papamoa",
+                "addressRegion": "Tauranga",
+                "postalCode": "3118",
+                "addressCountry": "NZ"
+              }
+            },
+            "organizer": {
+              "@id": "https://ultimateskillsnz.co.nz/#organization"
+            }
           }
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "99.00",
-          "priceCurrency": "NZD",
-          "url": "https://ultimateskillsnz.co.nz/programmes.html",
-          "availability": "https://schema.org/InStock",
-          "validFrom": "2026-02-01"
-        },
-        "performer": {
-          "@type": "Organization",
-          "name": "Ultimate Skills NZ"
-        },
-        "organizer": {
-          "@type": "Organization",
-          "name": "Ultimate Skills NZ",
-          "url": "https://ultimateskillsnz.co.nz"
-        }
+        ]
       }
     </script>
 
