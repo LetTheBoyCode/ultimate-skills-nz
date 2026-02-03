@@ -29,43 +29,58 @@
       media="all"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" defer></script>
   </head>
 
-  <body
-    class="bg-slate-50 font-body text-slate-700 min-h-screen flex items-center justify-center p-4"
-  >
-    <div class="max-w-md w-full text-center">
-      <div class="mb-8">
-        <span class="text-9xl font-display font-bold text-slate-200">404</span>
-      </div>
+  <body class="bg-slate-50 font-body text-slate-700 min-h-screen flex flex-col">
+    <div id="navbar-placeholder"></div>
+    <main class="flex-grow flex items-center justify-center p-4">
+      <section>
+        <div class="max-w-md w-full text-center">
+          <div class="mb-8">
+            <span class="text-9xl font-display font-bold text-slate-200"
+              >404</span
+            >
+          </div>
 
-      <h1 class="text-3xl font-display font-bold text-slate-900 mb-4">
-        Whoops! Lost in the field?
-      </h1>
-      <p class="text-slate-600 mb-8">
-        We couldn't find the page you're looking for. It might have moved, or
-        the link might be broken.
-      </p>
+          <h1 class="text-3xl font-display font-bold text-slate-900 mb-4">
+            Whoops! Lost in the field?
+          </h1>
+          <p class="text-slate-600 mb-8">
+            We couldn't find the page you're looking for. It might have moved,
+            or the link might be broken.
+          </p>
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href="index.html"
-          class="bg-brand text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-dark transition shadow-lg shadow-blue-500/20"
-        >
-          Back to Home
-        </a>
-        <a
-          href="programmes.html"
-          class="bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-slate-50 transition"
-        >
-          View Programmes
-        </a>
-      </div>
-    </div>
+          <div class="flex flex-col sm:flex-row gap-4 mb-10 justify-center">
+            <a
+              href="index.html"
+              class="bg-brand text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-dark transition shadow-lg shadow-blue-500/20"
+            >
+              Back to Home
+            </a>
+            <a
+              href="programmes.html"
+              class="bg-white border border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-slate-50 transition"
+            >
+              View Programmes
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <div id="footer-placeholder"></div>
-
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>
