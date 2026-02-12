@@ -133,7 +133,9 @@ window.toggleFaq = function(button) {
   const answer = button.nextElementSibling;
   const icon = button.querySelector("i");
 
-  icon.classList.add("transition-transform", "duration-300");
+  if (!icon.classList.contains("transition-transform")) {
+      icon.classList.add("transition-transform", "duration-300");
+  }
 
   if (answer.classList.contains("hidden")) {
     answer.classList.remove("hidden");
